@@ -1,5 +1,8 @@
 {
-  "name": "Ionic-Directory",
-  "integrations": {},
+  "name": "iirs-chss",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,7 @@
+{
+  "appId": "com.iirs.chss.ank",
+  "appName": "Ionic-Directory",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

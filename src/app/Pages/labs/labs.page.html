@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>Diagnostic / Lab</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar placeholder="Search.." animated="" (ionChange)="filterLabs( $event )" >
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <ion-list>
+    <ion-list-header>
+      List of Diagnostic/Lab
+    </ion-list-header>
+    <ion-item *ngFor="let item of lstLabs | filter:txtFilter">
+      <ion-avatar slot="start">
+        <img src="assets/doctor_images/lab.png">
+      </ion-avatar>
+      <ion-label>
+        <h2 class="ion-text-wrap">{{item.name}}</h2>
+        <h4 class="ion-text-wrap">{{item.address}}</h4>
+        <p class="ion-text-wrap">{{item.emai_id}}</p>
+        <p class="ion-text-wrap">{{item.phone}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

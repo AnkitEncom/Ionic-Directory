@@ -6,7 +6,7 @@ import { Chss} from '../models/chss.models';
   providedIn: 'root'
 })
 export class ChssDataService {
- private apiUrl: any = 'https://elearning.iirs.gov.in/chssApi/public/api/';
+ private apiUrl: any = 'http://localhost:8080/chssApi/public/api/';
   constructor( private objHTTP: HttpClient) { }
     // To Get AMO
     getAMOList() {
